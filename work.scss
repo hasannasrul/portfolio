@@ -1,0 +1,45 @@
+@import "style";
+$bluecolor: #08fdd8;
+$secondary-font: 'Dancing Script', cursive;
+
+img{
+    width: 15rem;
+    height: 15rem;
+}
+.navbar{
+    width: 10vh;
+}
+
+.work-header{
+    h1{
+        text-align: center;
+        color: $bluecolor;
+        font-size: 3rem;
+    }
+}
+
+.grid-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    .work-card{
+        h3{
+            margin: 0;
+            font-family: $secondary-font;
+        }
+        h3:hover{
+            border-bottom: 1px solid $bluecolor;
+            cursor: pointer;
+        }
+    }
+
+    img{
+        margin: 1.5rem;
+        padding: 5px;
+        border: 3px solid $bluecolor;
+    }
+    
+}

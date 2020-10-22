@@ -1,0 +1,21 @@
+@import 'style';
+$bluecolor: #08fdd8;
+
+.h1close{
+    margin-left: -7vh;
+}
+
+.about-heading{
+    color: $bluecolor;
+}
+.about-paragraph{
+    color: white !important;
+    line-height: 1.5rem;
+}
+.logo{
+    h1{
+        border: 1px solid $bluecolor;
+        padding: 6px;
+        border-radius: 50%;
+    }
+}

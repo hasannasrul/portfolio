@@ -1,0 +1,71 @@
+@import 'about';
+
+$bluecolor: #08fdd8;
+
+.pbody{
+    display: block !important;
+    margin-top: 3rem;
+}
+
+h1{
+    margin: 0;
+}
+.logo{
+    h1{
+        border: 1px solid $bluecolor;
+        padding: 6px;
+        border-radius: 50%;
+    }
+}
+
+.inputfield{
+    width: 18rem;
+    height: 2rem;
+    background: none;
+    border: none;
+    background-color: #555;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+input:focus{
+    background-color: $bluecolor;
+}
+
+.a1{
+    width: 50%;
+}
+
+.a2{
+    width: 50%;
+}
+
+.subject{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    background-color: #555;
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+textarea:focus{
+    background-color: $bluecolor;
+}
+
+
+.box{
+    max-width: fit-content;
+    min-width: 40%;
+}
+
+button{
+    margin-top: 0 !important;
+    float: right;
+}

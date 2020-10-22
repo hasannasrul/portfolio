@@ -1,0 +1,143 @@
+$primary-font: 'helvetica', sans-serif;
+$secondary-font: 'Dancing Script', cursive;
+
+$bgcolor: #222;
+$bluecolor: #08fdd8;
+
+@mixin flex-props{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-tags{
+    font-family: $secondary-font;
+    color: #666;
+    font-size: 1.7rem;
+}
+
+.bodyopen{
+    margin-left: -10vh;
+}
+.bodyclose{
+    margin-left: -10vh;
+}
+.h1open{
+    margin-left: -7vh;
+}
+.h1close{
+    font-size: 1.5rem;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: $bgcolor;
+    font-family: $primary-font;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+        .navbar{
+            height: 100vh;
+            width: 8vh;
+            @include flex-props;
+            flex-direction: column;
+            background-color: #111;
+
+            .logo{
+                flex-grow: 1;
+                h1{
+                    border: 1px solid $bluecolor;
+                    padding: 6px;
+                    border-radius: 50%;
+                }
+            }
+
+            .navlist{
+                flex-grow: 4;
+                ul{
+                    @include flex-props;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 100%;
+                    font-size: 1.7rem;
+                    list-style: none;
+                    padding: 0;
+
+                    a{
+                        color: #777;
+
+                        li:hover{
+                            color: $bluecolor;
+                        }
+                    }
+                }
+            }
+            .navfooter{
+                flex-grow: 3;
+                ul{
+                    @include flex-props;
+                    flex-direction: column;
+                    justify-content: center;
+                    height: 100%;
+                    font-size: 1.2rem;
+                    list-style: none;
+                    padding: 0;
+
+                    a{
+                        margin-top: 1rem;
+                        color: #777;
+
+                        li:hover{
+                            color: $bluecolor;
+                        }
+                    }
+                }
+            }
+        }
+
+        .pbody{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 15vh;
+
+            .intro{
+                h1{
+                    font-size: 3rem;
+
+                    .N{
+                        color: $bluecolor;
+                    }
+                }
+                p{
+                    margin: 0;
+                    font-size: 0.8rem;
+                    color: #777;
+                    letter-spacing: 3px;
+                    word-spacing: 5px;
+                }
+                button{
+                    font-size: 13px;
+                    padding: 10px 18px;
+                    letter-spacing: 4px;
+                    background: none;
+                    border: 1px solid $bluecolor;
+                    color: $bluecolor;
+                    margin-top: 2rem;
+                }
+                button:hover{
+                    background: $bluecolor;
+                    color: #555;
+                }
+            }
+        }
+    }
+}
+
