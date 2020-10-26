@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "deploy": "gh-pages -portfolio"
+    "deploy": "gh-pages -d PORTFOLIO"
   },
   "repository": {
     "type": "git",
