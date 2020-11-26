@@ -1,10 +1,3 @@
-var navbar = document.querySelector(".navlist");
-navbar.addEventListener("click",load());
-
-function load(){
-  
-}
-
 //----------------------------------  Home Page Animation --------------------------------------
 
 gsap.from(".intro", {
@@ -28,3 +21,8 @@ gsap.from(".intro", {
   });
   
   // -------------------------- Work Page Animation ---------------------------------------------
+  gsap.from(".work-header", {
+    opacity: 0, 
+    x: -150, 
+    duration: 2
+  });
