@@ -1,3 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
 @import 'about';
 
 $bluecolor: #08fdd8;
@@ -69,3 +76,27 @@ button{
     margin-top: 0 !important;
     float: right;
 }
+
+@media (max-width: 768px) {
+    .contact-heading{
+        font-size: 10px;
+    }
+    .inputfield{
+        width: 80%;
+        margin: auto;
+    }
+    textarea{
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+    }
+    .col{
+        margin: 1rem 0rem;
+    }
+    button{
+        float: left;
+        width: 80%;
+        padding: 0.2rem;
+
+    }
+  }

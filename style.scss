@@ -17,13 +17,13 @@ $bluecolor: #08fdd8;
 }
 
 .bodyopen{
-    margin-left: -10vh;
+    margin-left: -10%;
 }
 .bodyclose{
-    margin-left: -10vh;
+    margin-left: -10%;
 }
 .h1open{
-    margin-left: -7vh;
+    margin-left: -7%;
 }
 .h1close{
     font-size: 1.5rem;
@@ -44,7 +44,7 @@ body{
     display: flex;
     flex-direction: row;
     .container{
-        width: 100%;
+        width: max-content;
         height: 100vh;
         display: flex;
 
@@ -108,7 +108,7 @@ body{
         }
 
         .pbody{
-            width: 100%;
+            width: max-content;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
@@ -145,5 +145,16 @@ body{
             }
         }
     }
+    .invert{
+        height: 3rem;
+        margin: 2rem;
+        font-family: $secondary-font;
+    }
 }
 
+#particles-js{
+    height: 50%;
+    margin: auto;
+    width: 50%;
+    background-color: $bgcolor;
+}
