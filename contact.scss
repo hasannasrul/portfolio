@@ -13,90 +13,58 @@ $bluecolor: #08fdd8;
     display: block !important;
     margin-top: 3rem;
 }
-
-h1{
-    margin: 0;
+.contact-heading{
+    color: $bluecolor;
+    letter-spacing: -1px;
 }
-.logo{
-    h1{
-        border: 1px solid $bluecolor;
-        padding: 6px;
-        border-radius: 50%;
+
+.box{
+    .submit{
+        .row{
+            display: flex !important;
+        }
+        .a3{
+            width: 100%;
+        }
+    }
+    .input-subject{
+        width: 100%;
+    }
+    button{
+        float: right;
+        border-radius: 5px;
     }
 }
 
 .inputfield{
-    width: 18rem;
-    height: 2rem;
-    background: none;
-    border: none;
-    background-color: #555;
-    padding: 5px;
+    box-sizing: border-box;
+    border: 0;
+    background: #2b2b2b;
+    padding: 0 10px;
+    height: 50px;
+    font-size: 1rem;
+    color: #8b8b8b;
     margin: 5px;
-    color: white;
-    font-size: 1.3rem;
+    transition: 0.5s ease-in-out;
 }
 
-input:focus{
-    background-color: $bluecolor;
+.inputfield:focus{
+    outline: 0;
+    border-bottom: 2px solid $bluecolor;
 }
 
-.a1{
-    width: 50%;
-}
-
-.a2{
-    width: 50%;
-}
-
-.subject{
+#textareas{
+    padding: 20px;
+    min-height: 150px;
     width: 100%;
-}
-
-textarea{
-    width: 100%;
-    background-color: #555;
-    padding: 5px;
+    font-size: 1rem;
+    color: #8b8b8b;
+    border: 0;
+    background: #2b2b2b;
     margin: 5px;
-    color: white;
-    font-size: 1.3rem;
+    transition: 0.5s ease-out;
 }
-
-textarea:focus{
-    background-color: $bluecolor;
+#textareas:focus{
+    outline: 0;
+    border-bottom: 2px solid $bluecolor;
 }
-
-
-.box{
-    max-width: fit-content;
-    min-width: 40%;
-}
-
-button{
-    margin-top: 0 !important;
-    float: right;
-}
-
-@media (max-width: 768px) {
-    .contact-heading{
-        font-size: 10px;
-    }
-    .inputfield{
-        width: 80%;
-        margin: auto;
-    }
-    textarea{
-        width: 80%;
-        margin: auto;
-        margin-top: 1rem;
-    }
-    .col{
-        margin: 1rem 0rem;
-    }
-    button{
-        float: left;
-        width: 80%;
-        padding: 0.2rem;
-
-    }
-  }
