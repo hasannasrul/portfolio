@@ -4,6 +4,12 @@ $secondary-font: 'Dancing Script', cursive;
 $bgcolor: #222;
 $bluecolor: #08fdd8;
 
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 @mixin flex-props{
     display: flex;
     justify-content: space-between;
@@ -38,11 +44,13 @@ $bluecolor: #08fdd8;
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background-color: $bgcolor;
     font-family: $primary-font;
     color: white;
     display: flex;
     flex-direction: row;
+    background-attachment: fixed;
     .container{
         width: max-content;
         height: 100vh;

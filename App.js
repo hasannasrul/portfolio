@@ -21,11 +21,19 @@ gsap.from(".intro", {
   });
   
   // -------------------------- Work Page Animation ---------------------------------------------
-  gsap.from(".work-header", {
+  
+  gsap.from(".left-card", {
     opacity: 0, 
-    x: -150, 
-    duration: 2
+    x: -250, 
+    duration: 1
   });
+
+  gsap.from(".right-card", {
+    opacity: 0, 
+    x: 250, 
+    duration: 1
+  });
+
   // ---------------------------------------------------------------------------
 
   
