@@ -2,12 +2,10 @@
 $bluecolor: #08fdd8;
 $secondary-font: 'Dancing Script', cursive;
 
-img{
-    width: 15rem;
-    height: 15rem;
-}
+
 .navbar{
     padding: 0 10px;
+    width: 100vw;
 }
 
 .work-header{
@@ -19,8 +17,6 @@ img{
 }
 
 .grid-container{
-    width: 80%;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -36,15 +32,26 @@ img{
             cursor: pointer;
         }
     }
+    
 
     img{
-        margin: 1.5rem;
-        padding: 5px;
-        border: 3px solid $bluecolor;
+        width: 15rem;
+        height: 15rem;
         transition: transform .2s;
     }
+    
     img:hover{
         transform: scale(1.25);
     }
     
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        display: block;
+    }
+    .grid-container{
+        width: 60%;
+        margin: auto;
+    }
 }

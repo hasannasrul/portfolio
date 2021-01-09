@@ -1,5 +1,18 @@
 //----------------------------------  Home Page Animation --------------------------------------
 
+let ham = document.querySelector(".hamburger");
+  let hamNav = document.querySelector(".hamburger-nav");
+  const menuhandler = (e) => {
+    if(hamNav.style.display === "block"){
+      hamNav.style.display = "none";
+    }
+    else{
+      hamNav.style.display = "block";
+    }
+  }
+
+  ham.addEventListener("click",menuhandler);
+
 gsap.from(".intro", {
     opacity: 0, 
     y: 100, 

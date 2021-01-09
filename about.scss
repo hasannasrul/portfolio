@@ -1,10 +1,24 @@
 @import 'style';
 $bluecolor: #08fdd8;
 
+.hamburger-nav{
+  display: none;
+}
 .container{
     width: 100%;
 }
 
+.pbody{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4rem;
+  width: 100%;
+}
+
+.designation{
+  color: #7b7b7b;
+}
 .h1close{
     margin-left: -7vh;
 }
@@ -173,4 +187,43 @@ h1:hover{
     100% {
       width: 65%;
     }
+  }
+
+  @media screen and (max-width: 768px){
+    body{
+      display: block;
+    }
+    .container{
+      height: max-content !important;
+
+      .navbar{
+        display: flex !important;
+        flex-direction: row !important;
+        width: 100% !important;
+        height: 10% !important;
+
+        .hamburger{
+            display: block !important;
+            margin-right: 5px !important;
+        }
+        
+    }
+    }
+    .hamburger-nav{
+      ul{
+          display: flex;
+          list-style: none;
+          justify-content: space-around;
+          align-items: center;
+          background-color: #2b2b2b;
+          margin: 0;
+          padding: 0;
+          height: 5vh;
+          
+          i{
+              color: #fff;
+          }
+      }
+  }
+
   }

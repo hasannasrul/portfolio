@@ -1,3 +1,5 @@
+@import 'style';
+
 *{
     box-sizing: border-box;
 }
@@ -5,7 +7,7 @@ body{
     margin: 0;
     padding: 0;
 }
-@import 'about';
+
 
 $bluecolor: #08fdd8;
 
@@ -67,4 +69,18 @@ $bluecolor: #08fdd8;
 #textareas:focus{
     outline: 0;
     border-bottom: 2px solid $bluecolor;
+}
+
+@media screen and (max-width: 768px){
+    .box{
+        padding: 10px !important;
+        margin-left: 0 !important;
+    }
+    .navbar{
+        width: 100% !important;
+    }
+    .pbody{
+        margin-left: 0!important;
+    }
+
 }

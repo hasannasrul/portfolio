@@ -1,6 +1,5 @@
 $primary-font: 'helvetica', sans-serif;
 $secondary-font: 'Dancing Script', cursive;
-
 $bgcolor: #222;
 $bluecolor: #08fdd8;
 
@@ -35,15 +34,11 @@ html{
     font-size: 1.5rem;
 }
 
-.loading{
-    height: 100%;
-    width: 100%;
-    background-color: #111;
-}
 
 body{
     margin: 0;
     padding: 0;
+    overflow: auto;
     box-sizing: border-box;
     background-color: $bgcolor;
     font-family: $primary-font;
@@ -113,8 +108,14 @@ body{
                     }
                 }
             }
+            .hamburger{
+                display: none;
+            }
+            
         }
-
+        .hamburger-nav{
+            display: none;
+        }
         .pbody{
             width: max-content;
             display: flex;
@@ -165,4 +166,112 @@ body{
     margin: auto;
     width: 50%;
     background-color: $bgcolor;
+}
+
+
+
+@media only screen and (max-width: 768px){
+    body{
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        #particles-js{
+            width: 0 !important;
+        }
+
+        .top-tags{
+            font-size: 0.8rem;
+        }
+
+        .bodyopen{
+            margin-left: 0 !important;
+        }
+        .bodyclose{
+            margin-left: 0 !important;
+        }
+        .h1open{
+            margin-left: 0 !important;
+        }
+        .h1close{
+            font-size: 0 !important;
+        }
+        
+        
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100% !important;
+        .navbar{
+            display: flex !important;
+            flex-direction: row !important;
+            width: 100% !important;
+            height: 10% !important;
+
+            .logo{
+                h1{
+                    margin-left: 0!important;
+                }
+            }
+
+            .hamburger{
+                display: block !important;
+                margin-right: 5px !important;
+            }
+            
+        }
+        .hamburger-nav{
+            ul{
+                display: flex;
+                list-style: none;
+                justify-content: space-around;
+                align-items: center;
+                background-color: #2b2b2b;
+                margin: 0;
+                padding: 0;
+                height: 5vh;
+                
+                i{
+                    color: #fff;
+                }
+                
+
+            }
+        }
+        .logo{
+            flex-grow: unset !important;
+            display: flex;
+            margin: 0 !important;
+            padding: 0 !important;
+            margin-left: 5px !important;
+            width: max-content;
+            height: max-content;
+        }
+        .navlist{
+            display: none;
+        }
+        .navfooter{
+            display: none;
+        }
+    }
+
+    .pbody{
+        margin-left: 0.5rem !important;
+        overflow: auto;
+        width: 100% !important;
+        .intro{
+            h1{
+                font-size: 1.5rem !important;
+            }
+        }
+        button{
+            font-size: 9px !important;
+            padding: 5px 9px !important;
+            letter-spacing: 2px !important;
+            margin-top: 1rem !important;
+        }
+    }
+
+    
 }
