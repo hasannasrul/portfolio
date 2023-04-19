@@ -56,7 +56,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Nasrul`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{`Hi! I'm Nasrul`} <span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
                   <p>I specialize in supporting chatbots and AI/ML solutions, completing major/minor enhancements, and application migrations between databases. I have a proven track record of delivering efficient and reliable solutions. I have closely worked with platform and delivery teams to ensure seamless operations of their applications and chatbots. With expertise in ITIL processes and experience handling business stakeholders directly, I have a strong understanding of the importance of efficient communication and timely issue resolution. I am familiar with ticketing tools such as Service Manager and Zendesk, and am dedicated to driving innovation and collaboration. I seek new challenges to expand my skill set and drive the success of the organization.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}

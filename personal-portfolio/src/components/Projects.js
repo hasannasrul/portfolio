@@ -1,8 +1,11 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
-import projImg1 from "../assets/img/project-img1.png";
-import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg1 from "../assets/img/project-img1.jpg";
+import projImg2 from "../assets/img/project-img2.jpg";
+import projImg3 from "../assets/img/project-img3.jpg";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.jpg";
+import projImg6 from "../assets/img/project-img6.jpg";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -11,35 +14,41 @@ export const Projects = () => {
 
   const projects = [
     {
-      title: "Python",
-      description: "useful scripts and code snippets for devops in python",
-      imgUrl: projImg1,
+      title: "Kubernetes",
+      description: "workloads yaml and some projects",
+      imgUrl: projImg4,
+      link: "https://github.com/hasannasrul/Kubernetes-Devops"
     },
     {
       title: "Terraform",
       description: "concepts and some IaC snippets",
       imgUrl: projImg2,
+      link: "https://github.com/hasannasrul/Terraform-Devops"
+    },
+    {
+      title: "Complete pipeline",
+      description: "three tier application deployment using ci/cd kubernetes",
+      imgUrl: projImg6,
+      link: "https://github.com/hasannasrul/Terraform-Devops"
+    },
+    {
+      title: "Python",
+      description: "Useful scripts and code snippets for devops in python",
+      imgUrl: projImg1,
+      link: "https://github.com/hasannasrul/Python-Devops"
+    },
+    {
+      title: "CI/CD",
+      description: "pipeline as code and some important concepts",
+      imgUrl: projImg5,
+      link: "https://github.com/hasannasrul/Python-Devops"
     },
     {
       title: "Linux",
       description: "repetitive task scripts and important Linux concepts",
       imgUrl: projImg3,
-    },
-    {
-      title: "Kubernetes",
-      description: "workloads yaml and some projects",
-      imgUrl: projImg1,
-    },
-    {
-      title: "CI/CD",
-      description: "pipeline as code and some important concepts",
-      imgUrl: projImg2,
-    },
-    {
-      title: "Complete pipeline",
-      description: "three tier application deployment using ci/cd kubernetes",
-      imgUrl: projImg3,
-    },
+      link: "https://github.com/hasannasrul/Linux-Devops"
+    }
   ];
 
   return (
@@ -51,7 +60,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Code repos and Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p>Hover Over Code repos/Project to get a description</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
@@ -73,6 +82,7 @@ export const Projects = () => {
                               <ProjectCard
                                 key={index}
                                 {...project}
+                                link={project.link}
                                 />
                             )
                           })
