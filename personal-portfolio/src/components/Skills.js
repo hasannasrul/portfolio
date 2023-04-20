@@ -46,35 +46,35 @@ export const Skills = () => {
                                 <h5>Linux</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Kubernetes</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Docker</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Jenkins</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Terraform</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter3} alt="Image" />
                                 <h5>AWS</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Apache Airflow</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Webserver</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Databases</h5>
                             </div>
                         </Carousel>

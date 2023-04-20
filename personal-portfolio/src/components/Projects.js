@@ -29,7 +29,7 @@ export const Projects = () => {
       title: "Complete pipeline",
       description: "three tier application deployment using ci/cd kubernetes",
       imgUrl: projImg6,
-      link: "https://github.com/hasannasrul/Terraform-Devops"
+      link: "https://github.com/hasannasrul/cicd-project-devops"
     },
     {
       title: "Python",
@@ -41,7 +41,7 @@ export const Projects = () => {
       title: "CI/CD",
       description: "pipeline as code and some important concepts",
       imgUrl: projImg5,
-      link: "https://github.com/hasannasrul/Python-Devops"
+      link: "https://github.com/hasannasrul/CI-CD-Devops"
     },
     {
       title: "Linux",
@@ -52,7 +52,7 @@ export const Projects = () => {
   ];
 
   return (
-    <section className="project" id="project">
+    <section className="projects" id="projects">
       <Container>
         <Row>
           <Col size={12}>
@@ -89,11 +89,8 @@ export const Projects = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <p></p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>
